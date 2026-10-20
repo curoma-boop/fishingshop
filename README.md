@@ -76,7 +76,7 @@ flowchart LR
 
 ## 🌐 GitHub Pages
 Settings → Pages → Branch `main`, папка `/ (root)`. Чтобы сайт открывался по основному адресу, переименуйте `fishing.html` в `index.html`.
-Адрес: `https://github.com/curoma-boop/fishingshop.git`
+Адрес: `https://[your-username].github.io/[repo-name]`
 
 ## 📄 Лицензия
 MIT
