@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакты — FishMaster</title>
+  <link rel="stylesheet" href="fishing-style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="fishing-index.html" class="logo">Fish<span>Master</span> 🎣</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="fishing-index.html">Главная</a></li>
+        <li><a href="fishing-about.html">О магазине</a></li>
+        <li><a href="fishing-catalog.html">Каталог</a></li>
+        <li><a href="fishing-contact.html" class="active">Контакты</a></li>
+      </ul>
+      <div class="menu-toggle" id="menuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+
+  <div class="page-hero">
+    <h1>Контакты</h1>
+  </div>
+
+  <section>
+    <div class="contact-wrapper">
+      <div class="contact-info">
+        <h3>Как нас найти</h3>
+        <p>📍 г. Москва, ул. Рыбацкая, 7</p>
+        <p>📞 +7 (495) 987-65-43</p>
+        <p>✉️ info@fishmaster.ru</p>
+        <p>🕒 Пн–Пт: 10:00 – 20:00<br>
+           Сб–Вс: 10:00 – 18:00</p>
+
+        <h3 style="margin-top: 2rem;">Доставка и самовывоз</h3>
+        <p>Самовывоз из магазина — бесплатно. Доставка по Москве от 300 ₽. По России — транспортными компаниями.</p>
+
+        <div style="margin-top: 2rem;">
+          <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=600" alt="Магазин" style="width:100%; border-radius:14px; animation: float 5s ease-in-out infinite;">
+        </div>
+      </div>
+
+      <div class="contact-form">
+        <h3 style="color: var(--accent); margin-bottom: 1.4rem;">Напишите нам</h3>
+        <form onsubmit="event.preventDefault(); alert('Спасибо! Мы ответим вам в ближайшее время. Удачного клёва! 🎣');">
+          <div class="form-group">
+            <label for="name">Имя</label>
+            <input type="text" id="name" name="name" required placeholder="Ваше имя">
+          </div>
+          <div class="form-group">
+            <label for="phone">Телефон</label>
+            <input type="tel" id="phone" name="phone" required placeholder="+7 (___) ___-__-__">
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="email@example.com">
+          </div>
+          <div class="form-group">
+            <label for="topic">Тема</label>
+            <select id="topic" name="topic">
+              <option value="order">Заказ товара</option>
+              <option value="advice">Консультация по снастям</option>
+              <option value="delivery">Доставка</option>
+              <option value="other">Другое</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Сообщение</label>
+            <textarea id="message" name="message" rows="4" placeholder="Чем можем помочь?"></textarea>
+          </div>
+          <button type="submit" class="btn" style="width:100%; border:none;">Отправить</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="socials">
+      <a href="#">📱</a>
+      <a href="#">📷</a>
+      <a href="#">▶️</a>
+    </div>
+    <p>&copy; 2026 FishMaster. Всё для рыбалки. Все права защищены.</p>
+  </footer>
+
+  <script>
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

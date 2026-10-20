@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>О магазине — FishMaster</title>
+  <link rel="stylesheet" href="fishing-style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="fishing-index.html" class="logo">Fish<span>Master</span> 🎣</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="fishing-index.html">Главная</a></li>
+        <li><a href="fishing-about.html" class="active">О магазине</a></li>
+        <li><a href="fishing-catalog.html">Каталог</a></li>
+        <li><a href="fishing-contact.html">Контакты</a></li>
+      </ul>
+      <div class="menu-toggle" id="menuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+
+  <div class="page-hero">
+    <h1>О магазине</h1>
+  </div>
+
+  <section>
+    <div class="about-content">
+      <div class="about-img">
+        <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=700" alt="Рыбалка">
+      </div>
+      <div class="about-text">
+        <h2>Мы — рыбаки для рыбаков</h2>
+        <p>FishMaster появился в 2012 году из небольшой лавки у озера. Сегодня это один из самых любимых рыболовных магазинов с широким ассортиментом и живым общением.</p>
+        <p>Мы сами проводим выходные на воде, тестируем снасти и знаем, что действительно работает. Поэтому в нашем магазине нет «мёртвого» товара — только то, что помогает ловить.</p>
+        <p>Приходите за советом, снастями и хорошим настроением. Удачного клёва!</p>
+
+        <div class="stats">
+          <div class="stat">
+            <span class="stat-number">14+</span>
+            <span>Лет на рынке</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">8k+</span>
+            <span>Товаров</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">25k+</span>
+            <span>Клиентов</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">Наши принципы</h2>
+    <div class="features">
+      <div class="card">
+        <div class="card-img">
+          <img src="https://images.unsplash.com/photo-1504704911898-bbadf9d3c0c0?w=600" alt="Опыт">
+        </div>
+        <div class="card-body">
+          <h3>Опыт на воде</h3>
+          <p>Каждый консультант — практикующий рыболов. Мы говорим на одном языке с клиентами.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-img">
+          <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=600" alt="Качество">
+        </div>
+        <div class="card-body">
+          <h3>Только оригинал</h3>
+          <p>Работаем напрямую с официальными дистрибьюторами. Никаких подделок.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-img">
+          <img src="https://images.unsplash.com/photo-1498654200943-1088dd2805be?w=600" alt="Сообщество">
+        </div>
+        <div class="card-body">
+          <h3>Сообщество</h3>
+          <p>Проводим мастер-классы, выезды и конкурсы. FishMaster — это больше, чем магазин.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="socials">
+      <a href="#">📱</a>
+      <a href="#">📷</a>
+      <a href="#">▶️</a>
+    </div>
+    <p>&copy; 2026 FishMaster. Всё для рыбалки. Все права защищены.</p>
+  </footer>
+
+  <script>
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
